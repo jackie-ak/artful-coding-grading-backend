@@ -7,6 +7,10 @@
 
 include 'grades.php';
 
+// all messages and results will be returned as JSON, so we let the browser
+// know through the Content-Type header, so it can display it nicely
+header('Content-Type: application/json');
+
 /**
  * Set an HTTP response code, print message and quit.
  *
